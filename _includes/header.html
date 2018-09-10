@@ -1,0 +1,35 @@
+<div class="hero-head">
+    <figure id="header-carlos">
+        <img src="{{ site.baseurl }}/images/header-carlos.png" alt="AcampIMEnto 2017">
+    </figure>
+    <div class="container">
+        <nav class="nav has-shadow">
+            <div class="container">
+                <div class="nav-left">
+                    <a href="{{ site.baseurl }}/" class="nav-item">
+                        {{ site.title }}
+                    </a>
+                </div>
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="nav-right nav-menu">
+                    <a href="{{ site.baseurl }}/" class="nav-item is-tab {% if page.title == 'About' %} is-active {% endif %}">
+                        About
+                    </a>
+                    <a href="{{ site.baseurl }}/instructors" class="nav-item is-tab {% if page.title == 'Instructors' %} is-active {% endif %}">
+                        Instructors
+                    </a>
+                    <a href="{{ site.baseurl }}/day-by-day" class="nav-item is-tab {% if page.title == 'Day-by-day' %} is-active {% endif %}">
+                        Day-by-day
+                    </a>
+                    <a href="{{ site.baseurl }}/registration" class="nav-item is-tab {% if page.title == 'Registration' %} is-active {% endif %}">
+                        Registration
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

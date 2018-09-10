@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    <section class="hero is-default is-bold">
+        {% include header.html %}
+
+        <div class="hero-body">
+            <div class="container">
+                <div class="content is-large">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ site.baseurl }}/js/bulma.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+---
+layout: default
+title: Registration
+permalink: /registration
+---
+
+<h1 class="title is-1">Registration</h1>
+
+<p>
+The school is free.
+Every participant must fill this <a href="#" target="_blank">form</a>.
+If you have a team, all member must register individually.
+</p>
+
+<p>
+We will <strong>not</strong> provide any kind of food, housing or transportation.
+</p>
+
+<h2 class="title is-2">Registered students</h2>
+
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>School</th>
+    </thead>
+    <tbody>
+        {% for student in site.data.students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.school }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
