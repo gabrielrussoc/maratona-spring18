@@ -28,4 +28,4 @@ rsync _site/ $USER:$DEST -r
 
 # Envia o arquivo para o servidor final
 echo -e "\033[0;32m[Copiando arquivos para o usuario da maratona]\033[0m"
-ssh $USER "sudo -u maratona rsync $DEST /home/specmac/maratona/www/winter18 -r"
+ssh $USER "sudo -u maratona rsync $DEST /home/specmac/maratona/www/spring18 -r"
